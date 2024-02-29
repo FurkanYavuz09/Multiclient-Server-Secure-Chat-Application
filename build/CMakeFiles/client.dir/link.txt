@@ -1,1 +1,0 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/client.dir/multiclientmodel/client/client.cpp.o CMakeFiles/client.dir/multiclientmodel/client/main.cpp.o CMakeFiles/client.dir/file/fileIO.cpp.o CMakeFiles/client.dir/encryption/cypher.cpp.o -o client  -ljsoncpp -lcryptopp 

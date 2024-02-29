@@ -1,1 +1,0 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/exe.dir/encryption/example.cpp.o -o exe 
