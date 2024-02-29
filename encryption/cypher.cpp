@@ -28,7 +28,6 @@ std::string Cypher:: encryptMessage(const std::string& message) {
         CBC_Mode< AES >::Encryption e;
         e.SetKeyWithIV(key, key.size(), iv);
 
-        
         StringSource s(message, true, 
             new StreamTransformationFilter(e,
                 new StringSink(cipher)
@@ -66,9 +65,7 @@ std::string Cypher:: encryptMessage(const std::string& message) {
 std::string Cypher:: decryptMessage(const std::string& ciphertext) {
     std::string recovered ;
     std::string decoded;
-
     using namespace CryptoPP;
-
     try
     {
         CBC_Mode< AES >::Decryption d;
@@ -77,17 +74,13 @@ std::string Cypher:: decryptMessage(const std::string& ciphertext) {
         CryptoPP::StringSource(ciphertext, true,
         new CryptoPP::Base64Decoder(
             new CryptoPP::StringSink(decoded)
-        )
+            )
     );
-
-
         StringSource s(decoded, true, 
             new StreamTransformationFilter(d,
                 new StringSink(recovered)
             ) // StreamTransformationFilter
         ); // StringSource
-
-        
         // std::cout << "recovered text: " << recovered << std::endl;
     }
     catch(const Exception& e)

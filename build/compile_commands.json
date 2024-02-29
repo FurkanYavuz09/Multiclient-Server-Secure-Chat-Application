@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/furkan/Desktop/cmakeQuickStart/build",
+  "command": "/usr/bin/g++  -I/home/furkan/Desktop/cmakeQuickStart -I/home/furkan/Desktop/cmakeQuickStart/file -I/home/furkan/Desktop/cmakeQuickStart/encryption -g -o CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o -c /home/furkan/Desktop/cmakeQuickStart/multiclientmodel/server/server.cpp",
+  "file": "/home/furkan/Desktop/cmakeQuickStart/multiclientmodel/server/server.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/cmakeQuickStart/build",
+  "command": "/usr/bin/g++  -I/home/furkan/Desktop/cmakeQuickStart -I/home/furkan/Desktop/cmakeQuickStart/file -I/home/furkan/Desktop/cmakeQuickStart/encryption -g -o CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o -c /home/furkan/Desktop/cmakeQuickStart/multiclientmodel/server/main.cpp",
+  "file": "/home/furkan/Desktop/cmakeQuickStart/multiclientmodel/server/main.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/cmakeQuickStart/build",
+  "command": "/usr/bin/g++  -I/home/furkan/Desktop/cmakeQuickStart -I/home/furkan/Desktop/cmakeQuickStart/file -I/home/furkan/Desktop/cmakeQuickStart/encryption -g -o CMakeFiles/server.dir/file/fileIO.cpp.o -c /home/furkan/Desktop/cmakeQuickStart/file/fileIO.cpp",
+  "file": "/home/furkan/Desktop/cmakeQuickStart/file/fileIO.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/cmakeQuickStart/build",
+  "command": "/usr/bin/g++  -I/home/furkan/Desktop/cmakeQuickStart -I/home/furkan/Desktop/cmakeQuickStart/file -I/home/furkan/Desktop/cmakeQuickStart/encryption -g -o CMakeFiles/server.dir/encryption/cypher.cpp.o -c /home/furkan/Desktop/cmakeQuickStart/encryption/cypher.cpp",
+  "file": "/home/furkan/Desktop/cmakeQuickStart/encryption/cypher.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/cmakeQuickStart/build",
+  "command": "/usr/bin/g++  -I/home/furkan/Desktop/cmakeQuickStart -I/home/furkan/Desktop/cmakeQuickStart/file -I/home/furkan/Desktop/cmakeQuickStart/encryption -g -o CMakeFiles/client.dir/multiclientmodel/client/client.cpp.o -c /home/furkan/Desktop/cmakeQuickStart/multiclientmodel/client/client.cpp",
+  "file": "/home/furkan/Desktop/cmakeQuickStart/multiclientmodel/client/client.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/cmakeQuickStart/build",
+  "command": "/usr/bin/g++  -I/home/furkan/Desktop/cmakeQuickStart -I/home/furkan/Desktop/cmakeQuickStart/file -I/home/furkan/Desktop/cmakeQuickStart/encryption -g -o CMakeFiles/client.dir/multiclientmodel/client/main.cpp.o -c /home/furkan/Desktop/cmakeQuickStart/multiclientmodel/client/main.cpp",
+  "file": "/home/furkan/Desktop/cmakeQuickStart/multiclientmodel/client/main.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/cmakeQuickStart/build",
+  "command": "/usr/bin/g++  -I/home/furkan/Desktop/cmakeQuickStart -I/home/furkan/Desktop/cmakeQuickStart/file -I/home/furkan/Desktop/cmakeQuickStart/encryption -g -o CMakeFiles/client.dir/file/fileIO.cpp.o -c /home/furkan/Desktop/cmakeQuickStart/file/fileIO.cpp",
+  "file": "/home/furkan/Desktop/cmakeQuickStart/file/fileIO.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/cmakeQuickStart/build",
+  "command": "/usr/bin/g++  -I/home/furkan/Desktop/cmakeQuickStart -I/home/furkan/Desktop/cmakeQuickStart/file -I/home/furkan/Desktop/cmakeQuickStart/encryption -g -o CMakeFiles/client.dir/encryption/cypher.cpp.o -c /home/furkan/Desktop/cmakeQuickStart/encryption/cypher.cpp",
+  "file": "/home/furkan/Desktop/cmakeQuickStart/encryption/cypher.cpp"
+}
+]

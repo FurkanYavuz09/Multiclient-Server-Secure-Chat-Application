@@ -9,9 +9,12 @@ void sendit(Client& client){
     while (true) {
         // Send message to server
         std::string clientMessage = client.getName() + ": ";
+        memset(buffer, 0, sizeof(buffer));
+
         std::cin.getline(buffer, 1024);
         clientMessage += buffer;
-        if (strcmp(buffer, "exit\0") == 0) {
+        if (strcmp(buffer, "exit") == 0) {
+            exit(EXIT_SUCCESS);
             break;
         }
         std::cout << "Original Message: " << buffer << std::endl;

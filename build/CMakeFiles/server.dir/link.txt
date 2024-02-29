@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o CMakeFiles/server.dir/file/fileIO.cpp.o CMakeFiles/server.dir/encryption/cypher.cpp.o -o server  -ljsoncpp -lcryptopp 

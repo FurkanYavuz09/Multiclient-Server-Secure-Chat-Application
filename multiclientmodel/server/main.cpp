@@ -9,8 +9,11 @@ void messageSender(Server& server) {
         
         std::string clientMessage = "[SERVER]: ";
 
+        memset(message, 0, sizeof(message));
+
         std::cin.getline(message, 1024);
         if (strcmp(message, "exit") == 0) {
+            exit(EXIT_SUCCESS);
             break;
         }
         
