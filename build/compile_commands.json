@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/build",
+  "command": "/usr/bin/c++  -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption -g -o CMakeFiles/server.dir/clientservermodel/server/runserver.cpp.o -c /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/clientservermodel/server/runserver.cpp",
+  "file": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/clientservermodel/server/runserver.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/build",
+  "command": "/usr/bin/c++  -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption -g -o CMakeFiles/server.dir/clientservermodel/server/server.cpp.o -c /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/clientservermodel/server/server.cpp",
+  "file": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/clientservermodel/server/server.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/build",
+  "command": "/usr/bin/c++  -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption -g -o CMakeFiles/server.dir/file/fileIO.cpp.o -c /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file/fileIO.cpp",
+  "file": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file/fileIO.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/build",
+  "command": "/usr/bin/c++  -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption -g -o CMakeFiles/server.dir/encryption/cypher.cpp.o -c /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption/cypher.cpp",
+  "file": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption/cypher.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/build",
+  "command": "/usr/bin/c++  -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption -g -o CMakeFiles/client.dir/clientservermodel/client/runclient.cpp.o -c /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/clientservermodel/client/runclient.cpp",
+  "file": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/clientservermodel/client/runclient.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/build",
+  "command": "/usr/bin/c++  -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption -g -o CMakeFiles/client.dir/clientservermodel/client/client.cpp.o -c /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/clientservermodel/client/client.cpp",
+  "file": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/clientservermodel/client/client.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/build",
+  "command": "/usr/bin/c++  -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption -g -o CMakeFiles/client.dir/file/fileIO.cpp.o -c /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file/fileIO.cpp",
+  "file": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file/fileIO.cpp"
+},
+{
+  "directory": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/build",
+  "command": "/usr/bin/c++  -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/file -I/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption -g -o CMakeFiles/client.dir/encryption/cypher.cpp.o -c /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption/cypher.cpp",
+  "file": "/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/encryption/cypher.cpp"
+}
+]
