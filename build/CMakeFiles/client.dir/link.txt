@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-/usr/bin/c++ -g -rdynamic CMakeFiles/client.dir/clientservermodel/client/runclient.cpp.o CMakeFiles/client.dir/clientservermodel/client/client.cpp.o CMakeFiles/client.dir/file/fileIO.cpp.o CMakeFiles/client.dir/encryption/cypher.cpp.o -o client  -ljsoncpp -lcryptopp 
-=======
-/usr/bin/c++ -g -rdynamic CMakeFiles/client.dir/multiclientmodel/client/client.cpp.o CMakeFiles/client.dir/multiclientmodel/client/main.cpp.o CMakeFiles/client.dir/file/fileIO.cpp.o CMakeFiles/client.dir/encryption/cypher.cpp.o -o client  -ljsoncpp -lcryptopp 
->>>>>>> 6d0f368 (asd)
