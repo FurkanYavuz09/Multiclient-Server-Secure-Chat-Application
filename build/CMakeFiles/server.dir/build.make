@@ -69,6 +69,7 @@ include CMakeFiles/server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/server.dir/flags.make
 
+<<<<<<< HEAD
 CMakeFiles/server.dir/clientservermodel/server/runserver.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/clientservermodel/server/runserver.cpp.o: ../clientservermodel/server/runserver.cpp
 CMakeFiles/server.dir/clientservermodel/server/runserver.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
@@ -96,6 +97,35 @@ CMakeFiles/server.dir/clientservermodel/server/server.cpp.i: cmake_force
 CMakeFiles/server.dir/clientservermodel/server/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/clientservermodel/server/server.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/clientservermodel/server/server.cpp -o CMakeFiles/server.dir/clientservermodel/server/server.cpp.s
+=======
+CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o: ../multiclientmodel/server/server.cpp
+CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o -MF CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o.d -o CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o -c /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/multiclientmodel/server/server.cpp
+
+CMakeFiles/server.dir/multiclientmodel/server/server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/multiclientmodel/server/server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/multiclientmodel/server/server.cpp > CMakeFiles/server.dir/multiclientmodel/server/server.cpp.i
+
+CMakeFiles/server.dir/multiclientmodel/server/server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/multiclientmodel/server/server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/multiclientmodel/server/server.cpp -o CMakeFiles/server.dir/multiclientmodel/server/server.cpp.s
+
+CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o: ../multiclientmodel/server/main.cpp
+CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o -MF CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o.d -o CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o -c /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/multiclientmodel/server/main.cpp
+
+CMakeFiles/server.dir/multiclientmodel/server/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/multiclientmodel/server/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/multiclientmodel/server/main.cpp > CMakeFiles/server.dir/multiclientmodel/server/main.cpp.i
+
+CMakeFiles/server.dir/multiclientmodel/server/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/multiclientmodel/server/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/furkan/Desktop/Multiclient-Server-Secure-Chat-Application/multiclientmodel/server/main.cpp -o CMakeFiles/server.dir/multiclientmodel/server/main.cpp.s
+>>>>>>> 6d0f368 (asd)
 
 CMakeFiles/server.dir/file/fileIO.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/file/fileIO.cpp.o: ../file/fileIO.cpp
@@ -127,16 +157,26 @@ CMakeFiles/server.dir/encryption/cypher.cpp.s: cmake_force
 
 # Object files for target server
 server_OBJECTS = \
+<<<<<<< HEAD
 "CMakeFiles/server.dir/clientservermodel/server/runserver.cpp.o" \
 "CMakeFiles/server.dir/clientservermodel/server/server.cpp.o" \
+=======
+"CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o" \
+"CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o" \
+>>>>>>> 6d0f368 (asd)
 "CMakeFiles/server.dir/file/fileIO.cpp.o" \
 "CMakeFiles/server.dir/encryption/cypher.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
+<<<<<<< HEAD
 server: CMakeFiles/server.dir/clientservermodel/server/runserver.cpp.o
 server: CMakeFiles/server.dir/clientservermodel/server/server.cpp.o
+=======
+server: CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o
+server: CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o
+>>>>>>> 6d0f368 (asd)
 server: CMakeFiles/server.dir/file/fileIO.cpp.o
 server: CMakeFiles/server.dir/encryption/cypher.cpp.o
 server: CMakeFiles/server.dir/build.make

@@ -536,102 +536,6 @@ client/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
 .PHONY : client/fast
 
-clientservermodel/client/client.o: clientservermodel/client/client.cpp.o
-.PHONY : clientservermodel/client/client.o
-
-# target to build an object file
-clientservermodel/client/client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clientservermodel/client/client.cpp.o
-.PHONY : clientservermodel/client/client.cpp.o
-
-clientservermodel/client/client.i: clientservermodel/client/client.cpp.i
-.PHONY : clientservermodel/client/client.i
-
-# target to preprocess a source file
-clientservermodel/client/client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clientservermodel/client/client.cpp.i
-.PHONY : clientservermodel/client/client.cpp.i
-
-clientservermodel/client/client.s: clientservermodel/client/client.cpp.s
-.PHONY : clientservermodel/client/client.s
-
-# target to generate assembly for a file
-clientservermodel/client/client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clientservermodel/client/client.cpp.s
-.PHONY : clientservermodel/client/client.cpp.s
-
-clientservermodel/client/runclient.o: clientservermodel/client/runclient.cpp.o
-.PHONY : clientservermodel/client/runclient.o
-
-# target to build an object file
-clientservermodel/client/runclient.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clientservermodel/client/runclient.cpp.o
-.PHONY : clientservermodel/client/runclient.cpp.o
-
-clientservermodel/client/runclient.i: clientservermodel/client/runclient.cpp.i
-.PHONY : clientservermodel/client/runclient.i
-
-# target to preprocess a source file
-clientservermodel/client/runclient.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clientservermodel/client/runclient.cpp.i
-.PHONY : clientservermodel/client/runclient.cpp.i
-
-clientservermodel/client/runclient.s: clientservermodel/client/runclient.cpp.s
-.PHONY : clientservermodel/client/runclient.s
-
-# target to generate assembly for a file
-clientservermodel/client/runclient.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clientservermodel/client/runclient.cpp.s
-.PHONY : clientservermodel/client/runclient.cpp.s
-
-clientservermodel/server/runserver.o: clientservermodel/server/runserver.cpp.o
-.PHONY : clientservermodel/server/runserver.o
-
-# target to build an object file
-clientservermodel/server/runserver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clientservermodel/server/runserver.cpp.o
-.PHONY : clientservermodel/server/runserver.cpp.o
-
-clientservermodel/server/runserver.i: clientservermodel/server/runserver.cpp.i
-.PHONY : clientservermodel/server/runserver.i
-
-# target to preprocess a source file
-clientservermodel/server/runserver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clientservermodel/server/runserver.cpp.i
-.PHONY : clientservermodel/server/runserver.cpp.i
-
-clientservermodel/server/runserver.s: clientservermodel/server/runserver.cpp.s
-.PHONY : clientservermodel/server/runserver.s
-
-# target to generate assembly for a file
-clientservermodel/server/runserver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clientservermodel/server/runserver.cpp.s
-.PHONY : clientservermodel/server/runserver.cpp.s
-
-clientservermodel/server/server.o: clientservermodel/server/server.cpp.o
-.PHONY : clientservermodel/server/server.o
-
-# target to build an object file
-clientservermodel/server/server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clientservermodel/server/server.cpp.o
-.PHONY : clientservermodel/server/server.cpp.o
-
-clientservermodel/server/server.i: clientservermodel/server/server.cpp.i
-.PHONY : clientservermodel/server/server.i
-
-# target to preprocess a source file
-clientservermodel/server/server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clientservermodel/server/server.cpp.i
-.PHONY : clientservermodel/server/server.cpp.i
-
-clientservermodel/server/server.s: clientservermodel/server/server.cpp.s
-.PHONY : clientservermodel/server/server.s
-
-# target to generate assembly for a file
-clientservermodel/server/server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clientservermodel/server/server.cpp.s
-.PHONY : clientservermodel/server/server.cpp.s
-
 encryption/cypher.o: encryption/cypher.cpp.o
 .PHONY : encryption/cypher.o
 
@@ -686,6 +590,102 @@ file/fileIO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/file/fileIO.cpp.s
 .PHONY : file/fileIO.cpp.s
 
+multiclientmodel/client/client.o: multiclientmodel/client/client.cpp.o
+.PHONY : multiclientmodel/client/client.o
+
+# target to build an object file
+multiclientmodel/client/client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/multiclientmodel/client/client.cpp.o
+.PHONY : multiclientmodel/client/client.cpp.o
+
+multiclientmodel/client/client.i: multiclientmodel/client/client.cpp.i
+.PHONY : multiclientmodel/client/client.i
+
+# target to preprocess a source file
+multiclientmodel/client/client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/multiclientmodel/client/client.cpp.i
+.PHONY : multiclientmodel/client/client.cpp.i
+
+multiclientmodel/client/client.s: multiclientmodel/client/client.cpp.s
+.PHONY : multiclientmodel/client/client.s
+
+# target to generate assembly for a file
+multiclientmodel/client/client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/multiclientmodel/client/client.cpp.s
+.PHONY : multiclientmodel/client/client.cpp.s
+
+multiclientmodel/client/main.o: multiclientmodel/client/main.cpp.o
+.PHONY : multiclientmodel/client/main.o
+
+# target to build an object file
+multiclientmodel/client/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/multiclientmodel/client/main.cpp.o
+.PHONY : multiclientmodel/client/main.cpp.o
+
+multiclientmodel/client/main.i: multiclientmodel/client/main.cpp.i
+.PHONY : multiclientmodel/client/main.i
+
+# target to preprocess a source file
+multiclientmodel/client/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/multiclientmodel/client/main.cpp.i
+.PHONY : multiclientmodel/client/main.cpp.i
+
+multiclientmodel/client/main.s: multiclientmodel/client/main.cpp.s
+.PHONY : multiclientmodel/client/main.s
+
+# target to generate assembly for a file
+multiclientmodel/client/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/multiclientmodel/client/main.cpp.s
+.PHONY : multiclientmodel/client/main.cpp.s
+
+multiclientmodel/server/main.o: multiclientmodel/server/main.cpp.o
+.PHONY : multiclientmodel/server/main.o
+
+# target to build an object file
+multiclientmodel/server/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/multiclientmodel/server/main.cpp.o
+.PHONY : multiclientmodel/server/main.cpp.o
+
+multiclientmodel/server/main.i: multiclientmodel/server/main.cpp.i
+.PHONY : multiclientmodel/server/main.i
+
+# target to preprocess a source file
+multiclientmodel/server/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/multiclientmodel/server/main.cpp.i
+.PHONY : multiclientmodel/server/main.cpp.i
+
+multiclientmodel/server/main.s: multiclientmodel/server/main.cpp.s
+.PHONY : multiclientmodel/server/main.s
+
+# target to generate assembly for a file
+multiclientmodel/server/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/multiclientmodel/server/main.cpp.s
+.PHONY : multiclientmodel/server/main.cpp.s
+
+multiclientmodel/server/server.o: multiclientmodel/server/server.cpp.o
+.PHONY : multiclientmodel/server/server.o
+
+# target to build an object file
+multiclientmodel/server/server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/multiclientmodel/server/server.cpp.o
+.PHONY : multiclientmodel/server/server.cpp.o
+
+multiclientmodel/server/server.i: multiclientmodel/server/server.cpp.i
+.PHONY : multiclientmodel/server/server.i
+
+# target to preprocess a source file
+multiclientmodel/server/server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/multiclientmodel/server/server.cpp.i
+.PHONY : multiclientmodel/server/server.cpp.i
+
+multiclientmodel/server/server.s: multiclientmodel/server/server.cpp.s
+.PHONY : multiclientmodel/server/server.s
+
+# target to generate assembly for a file
+multiclientmodel/server/server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/multiclientmodel/server/server.cpp.s
+.PHONY : multiclientmodel/server/server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -727,24 +727,24 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... client"
 	@echo "... server"
-	@echo "... clientservermodel/client/client.o"
-	@echo "... clientservermodel/client/client.i"
-	@echo "... clientservermodel/client/client.s"
-	@echo "... clientservermodel/client/runclient.o"
-	@echo "... clientservermodel/client/runclient.i"
-	@echo "... clientservermodel/client/runclient.s"
-	@echo "... clientservermodel/server/runserver.o"
-	@echo "... clientservermodel/server/runserver.i"
-	@echo "... clientservermodel/server/runserver.s"
-	@echo "... clientservermodel/server/server.o"
-	@echo "... clientservermodel/server/server.i"
-	@echo "... clientservermodel/server/server.s"
 	@echo "... encryption/cypher.o"
 	@echo "... encryption/cypher.i"
 	@echo "... encryption/cypher.s"
 	@echo "... file/fileIO.o"
 	@echo "... file/fileIO.i"
 	@echo "... file/fileIO.s"
+	@echo "... multiclientmodel/client/client.o"
+	@echo "... multiclientmodel/client/client.i"
+	@echo "... multiclientmodel/client/client.s"
+	@echo "... multiclientmodel/client/main.o"
+	@echo "... multiclientmodel/client/main.i"
+	@echo "... multiclientmodel/client/main.s"
+	@echo "... multiclientmodel/server/main.o"
+	@echo "... multiclientmodel/server/main.i"
+	@echo "... multiclientmodel/server/main.s"
+	@echo "... multiclientmodel/server/server.o"
+	@echo "... multiclientmodel/server/server.i"
+	@echo "... multiclientmodel/server/server.s"
 .PHONY : help
 
 
