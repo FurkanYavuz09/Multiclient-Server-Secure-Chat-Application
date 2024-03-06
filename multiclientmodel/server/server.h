@@ -24,9 +24,10 @@ public:
     Cypher cypher;
     Server(int port);
     void start();
-    void handleClient(int clientSocket);
+    void handleClient(int clientSocket, std::string clientName);
     void broadcastMessage(int senderSocket, const char *message);
     void sendToClient(int clientSocket, const char *message);
+    int receiveFromClient(char* buffer, int clientSocket);
     ~Server();
 };
 

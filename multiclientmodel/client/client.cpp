@@ -1,7 +1,7 @@
 // client.cpp
 #include "client.h"
 
-Client::Client(const char *serverIp, int port) : serverIp(serverIp), port(port), clientSocket(0), file("../multiclientmodel/logs/clientlog.txt"), cypher() {
+Client::Client(const char *serverIp, int port) : serverIp(serverIp), port(port), clientSocket(0), cypher() {//file("../multiclientmodel/logs/clientlog.txt"),
     struct sockaddr_in serv_addr;
 
     if ((clientSocket = socket(AF_INET, SOCK_STREAM, 0)) < 0) {

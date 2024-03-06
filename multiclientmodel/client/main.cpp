@@ -50,6 +50,8 @@ int main() {
     std::cin.getline(buffer, 1024);
     client.setName(buffer);
 
+    client.sendMessage(client.getName().c_str());
+
     char keyAndIV[1024];
     int bytes_received = client.receiveMessage(keyAndIV);
 

@@ -67,15 +67,21 @@ void Server::start() {
             perror("accept");
             exit(EXIT_FAILURE);
         }
+        char clientName[1024] ;
+        receiveFromClient(clientName, clientSocket);
+        std::string name(clientName);
+        std::cout << name  <<" entered the chat... " << clientSocket << std::endl;
+        memset(clientName, 0, sizeof(clientName));
+
         sendToClient(clientSocket, keyAndIV.c_str());
 
         // Handle each client connection in a separate thread
-        std::thread clientThread(&Server::handleClient, this, clientSocket);
+        std::thread clientThread(&Server::handleClient, this, clientSocket, name);
         clientThread.detach(); // Detach the thread to run independently
     }
 }
 
-void Server::handleClient(int clientSocket) {
+void Server::handleClient(int clientSocket, std::string clientName) {
     char buffer[1024] ;
     int valread;
     
@@ -93,7 +99,7 @@ void Server::handleClient(int clientSocket) {
     }
     
     if (valread == 0) {
-        std::cout << "Client disconnected with socket: " << clientSocket << std::endl;
+        std::cout << clientName<<" left from chat... "  << "\n";
     } 
     else {
         perror("read");
@@ -114,6 +120,11 @@ void Server::broadcastMessage(int senderSocket, const char *message) {
 
 void Server::sendToClient(int clientSocket, const char *message) {
     send(clientSocket, message, strlen(message), 0);
+}
+
+int Server::receiveFromClient(char* buffer, int clientSocket) {
+    return read(clientSocket, buffer, 1024);
+    
 }
 
 Server::~Server() {
