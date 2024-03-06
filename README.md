@@ -1,1 +1,1 @@
-Chat Application with Multiclient - Server ,Secure Communication(AES), Log System, String to JSON features.
+Chat Application with Multiclient - Server ,Secure Communication(AES) with cryptopp library, Log System, String to JSON conversions with jsoncpp.
