@@ -1,4 +1,3 @@
-// client.cpp
 #include "client.h"
 
 Client::Client(const char *serverIp, int port) : serverIp(serverIp), port(port), clientSocket(0), cypher() {//file("../multiclientmodel/logs/clientlog.txt"),

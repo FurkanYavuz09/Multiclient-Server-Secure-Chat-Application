@@ -1,4 +1,3 @@
-// server_main.cpp
 #include "server.h"
 #include <thread>
 #include "fileIO.h"
@@ -31,7 +30,7 @@ void messageSender(Server& server) {
     }
 }
 
-int main() {
+void serverRun() {
     
     Server server(8080);
 
@@ -45,5 +44,10 @@ int main() {
     // Join the server thread to keep the main thread alive
     serverThread.join();
 
-    return 0;
+    
+}
+
+int main() {
+     serverRun();
+     return 0;
 }

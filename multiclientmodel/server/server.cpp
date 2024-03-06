@@ -1,4 +1,3 @@
-// server.cpp
 #include "server.h"
 #include <fileIO.h>
 #include <cypher.h>
