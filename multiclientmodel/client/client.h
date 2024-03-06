@@ -18,7 +18,7 @@ private:
     std::string name;
 
 public:
-    FileIO file;
+    // FileIO file;
     Cypher cypher;
     Client(const char *serverIp, int port);
     ~Client();
