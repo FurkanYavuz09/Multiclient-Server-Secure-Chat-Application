@@ -34,29 +34,24 @@ Server::Server(int port) : port(port), serverSocket(0), file("../multiclientmode
         exit(EXIT_FAILURE);
     }
 }
-
 void Server::start() {
     int clientSocket;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
-
     using namespace CryptoPP;
     AutoSeededRandomPool prng;
     prng.GenerateBlock(cypher.key, cypher.key.size());
     prng.GenerateBlock(cypher.iv, cypher.iv.size());
-
     // std::cout << "key: "<< cypher.key.data() << std::endl;
     // std::cout << "iv: "<< cypher.iv.data() << std::endl;
     // std::cout << "key : ";
     // cypher.encoder.Put(cypher.key.data(), cypher.key.size());
     // cypher.encoder.MessageEnd();
     // std::cout << "\n";
-
     // std::cout << "iv : ";
     // cypher.encoder.Put(cypher.iv.data(), cypher.iv.size());
     // cypher.encoder.MessageEnd();
     // std::cout << "\n";
-
     std::string keyAndIV(reinterpret_cast<const char*>(cypher.key.data()), cypher.key.size());
     keyAndIV.append(reinterpret_cast<const char*>(cypher.iv.data()), CryptoPP::AES::BLOCKSIZE);
 
@@ -69,7 +64,7 @@ void Server::start() {
         char clientName[1024] ;
         receiveFromClient(clientName, clientSocket);
         std::string name(clientName);
-        std::cout << name  <<" entered the chat... " << clientSocket << std::endl;
+        std::cout << name  <<" entered the chat... " << "\n";
         memset(clientName, 0, sizeof(clientName));
 
         sendToClient(clientSocket, keyAndIV.c_str());
@@ -83,9 +78,7 @@ void Server::start() {
 void Server::handleClient(int clientSocket, std::string clientName) {
     char buffer[1024] ;
     int valread;
-    
     clients.push_back(clientSocket);
-
     while ((valread = read(clientSocket, buffer, 1024)) > 0) {
         buffer[valread] = '\0';
         
