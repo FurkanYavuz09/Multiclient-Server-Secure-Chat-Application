@@ -79,19 +79,22 @@ void Server::handleClient(int clientSocket, std::string clientName) {
     char buffer[1024] ;
     int valread;
     clients.push_back(clientSocket);
+    std::string leftMessage = clientName+" left from chat... ";
     while ((valread = read(clientSocket, buffer, 1024)) > 0) {
         buffer[valread] = '\0';
         
         std::cout << "Encrypted Message: " << buffer << "\n";
         std::string decrypted = cypher.decryptMessage(buffer);
-        std::cout <<"Decrypted Message From "<< decrypted << "\n";
+        std::cout <<"Decrypted Message  "<< decrypted << "\n";
         broadcastMessage(clientSocket, buffer);
         file.write(decrypted);
         memset(buffer, 0, sizeof(buffer));
     }
     
     if (valread == 0) {
-        std::cout << clientName<<" left from chat... "  << "\n";
+        std::string encryptedLeftMessage = cypher.encryptMessage(leftMessage);
+        broadcastMessage(clientSocket, encryptedLeftMessage.c_str());
+        std::cout << leftMessage << "\n";
     } 
     else {
         perror("read");

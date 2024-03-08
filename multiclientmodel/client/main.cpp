@@ -5,7 +5,6 @@
 void sendit(Client& client){
     char buffer[1024];
     while (true) {
-        // Send message to server
         std::string clientMessage = client.getName() + ": ";
         memset(buffer, 0, sizeof(buffer));
         std::cin.getline(buffer, 1024);
@@ -14,7 +13,7 @@ void sendit(Client& client){
             exit(EXIT_SUCCESS);
             break;
         }
-        std::cout << "Original Message: " << buffer << std::endl;
+        std::cout << client.getName()+" : " << buffer << "\n";
         std::string ciphertext = client.cypher.encryptMessage(clientMessage);
         std::cout << "Encrypted Message: " << ciphertext << "\n";
         client.sendMessage( ciphertext.c_str());
@@ -30,16 +29,16 @@ void receive(Client& client){
             exit(EXIT_SUCCESS);
         }
         buffer[valread] = '\0'; // Null-terminate the received data
-        std::cout << "Received Encrypted Server Message: " << buffer << "\n";
+        std::cout << " Encrypted Message: " << buffer << "\n";
         std::string ciphertext = client.cypher.decryptMessage(buffer);
-        std::cout << "Decrypted Message From " << ciphertext << "\n";
+        std::cout << "Decrypted Message  " << ciphertext << "\n";
     }
 }
 
 void clientRun() {
     Client client("127.0.0.1", 8080);
     char buffer[1024];
-    std::cout << "enter your name: ";
+    std::cout << "Please Enter Your Name: ";
     std::cin.getline(buffer, 1024);
     client.setName(buffer);
     client.sendMessage(client.getName().c_str());
