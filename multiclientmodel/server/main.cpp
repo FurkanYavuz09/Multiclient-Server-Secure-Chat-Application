@@ -26,7 +26,14 @@ void messageSender(Server& server) {
 void serverRun() {
     Server server(8080);
     std::cout << "Server started..." << std::endl;
-    std::thread serverThread(&Server::start, &server);// Start the server in a separate thread
+    // std::thread serverThread(&Server::start, &server);// Start the server in a separate thread
+
+    std::thread serverThread([&server]() {
+        server.start();
+    });
+
+
+
     messageSender(server);// Start the message sending loop in the main thread
     serverThread.join();// Join the server thread to keep the main thread alive
 }

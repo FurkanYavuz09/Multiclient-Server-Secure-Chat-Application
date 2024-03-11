@@ -56,8 +56,16 @@ void clientRun() {
     CryptoPP::SecByteBlock iv(reinterpret_cast<const CryptoPP::byte*>(ivStr.data()), ivStr.size());
     client.cypher.key = key;
     client.cypher.iv = iv;
-    std::thread send_thread(sendit, std::ref(client));
-    std::thread receive_thread(receive, std::ref(client));
+    // std::thread send_thread(sendit, std::ref(client));
+    // std::thread receive_thread(receive, std::ref(client));
+    std::thread send_thread([&client]() {
+        sendit(client);
+    });
+
+    std::thread receive_thread([&client]() {
+        receive(client);
+    });
+    
     send_thread.join();
     receive_thread.join();   
 }
