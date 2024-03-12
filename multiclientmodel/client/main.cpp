@@ -40,8 +40,16 @@ void clientRun() {
     char buffer[1024];
     std::cout << "Please Enter Your Name: ";
     std::cin.getline(buffer, 1024);
+
+    while (strlen(buffer) == 0) {
+        std::cout << "You entered nothing!\n";
+        std::cout << "Please Enter Your Name: ";
+        std::cin.getline(buffer, 1024);
+    }
+    
     client.setName(buffer);
     client.sendMessage(client.getName().c_str());
+
     char keyAndIV[1024];
     int bytes_received = client.receiveMessage(keyAndIV);
     keyAndIV[bytes_received] = '\0';

@@ -32,8 +32,6 @@ void serverRun() {
         server.start();
     });
 
-
-
     messageSender(server);// Start the message sending loop in the main thread
     serverThread.join();// Join the server thread to keep the main thread alive
 }
