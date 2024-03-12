@@ -11,7 +11,7 @@
 #include "fileIO.h"
 #include "cypher.h"
 
-#define MAX_CLIENTS 5
+#define MAX_CLIENTS 10
 
 class Server {
 private:

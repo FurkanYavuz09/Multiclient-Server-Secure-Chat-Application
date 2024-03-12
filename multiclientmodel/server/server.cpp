@@ -10,12 +10,14 @@ Server::Server(int port) : port(port), serverSocket(0), file("../multiclientmode
     // Creating socket file descriptor
     if ((serverSocket = socket(AF_INET, SOCK_STREAM, 0)) == 0) {
         perror("socket failed");
+        file.write("socket failed");
         exit(EXIT_FAILURE);
     }
 
     // Forcefully attaching socket to the port
     if (setsockopt(serverSocket, SOL_SOCKET, SO_REUSEADDR | SO_REUSEPORT, &opt, sizeof(opt))) {
         perror("setsockopt");
+        file.write("Error setsockopt");
         exit(EXIT_FAILURE);
     }
 
@@ -26,11 +28,13 @@ Server::Server(int port) : port(port), serverSocket(0), file("../multiclientmode
     // Forcefully attaching socket to the port
     if (bind(serverSocket, (struct sockaddr *)&address, sizeof(address)) < 0) {
         perror("bind failed");
+        file.write("bind failed");
         exit(EXIT_FAILURE);
     }
 
     if (listen(serverSocket, MAX_CLIENTS) < 0) {
         perror("listen");
+        file.write("Conneclisten");
         exit(EXIT_FAILURE);
     }
 }
@@ -59,6 +63,7 @@ void Server::start() {
 
         if ((clientSocket = accept(serverSocket, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0) {
             perror("accept");
+            file.write("Connection Accepted");
             exit(EXIT_FAILURE);
         }
         char clientName[1024] ;
@@ -80,6 +85,7 @@ void Server::handleClient(int clientSocket, std::string clientName) {
     int valread;
     clients.push_back(clientSocket);
     std::string leftMessage = clientName+" left from chat... ";
+    file.write(leftMessage);
     while ((valread = read(clientSocket, buffer, 1024)) > 0) {
         buffer[valread] = '\0';
         
@@ -94,7 +100,7 @@ void Server::handleClient(int clientSocket, std::string clientName) {
     if (valread == 0) {
         std::string encryptedLeftMessage = cypher.encryptMessage(leftMessage);
         broadcastMessage(clientSocket, encryptedLeftMessage.c_str());
-        std::cout << leftMessage << "\n";
+        std::cout << cypher.decryptMessage(encryptedLeftMessage) << "\n";
     } 
     else {
         perror("read");
